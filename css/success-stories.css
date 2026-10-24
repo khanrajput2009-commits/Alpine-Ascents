@@ -1,0 +1,121 @@
+/* ============================================================
+   ALPINE ASCENTS — SUCCESS STORIES PAGE CSS
+   Loaded only on html/success-stories.html
+   Uses global styles from css/style.css
+   ============================================================ */
+
+/* ============================================================
+   STORY CARD ICON OVERRIDE (quote marks instead of arrows)
+   ============================================================ */
+.expedition-card .exp-arrow i {
+  font-size: 1.5rem;
+  transition: transform .4s ease;
+}
+
+.expedition-card:hover .exp-arrow {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #000;
+  transform: none;
+}
+
+.expedition-card:hover .exp-arrow i {
+  transform: scale(1.15);
+}
+
+/* ============================================================
+   FULL STORY CARDS
+   ============================================================ */
+.story-card {
+  background: var(--dark-2);
+  border: 1px solid rgba(201, 162, 39, .2);
+  padding: 34px 30px;
+  border-radius: 4px;
+  height: 100%;
+  transition: all .4s ease;
+  position: relative;
+}
+
+.story-card:hover {
+  border-color: rgba(201, 162, 39, .5);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, .4);
+}
+
+.story-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(232, 238, 245, .08);
+}
+
+.story-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gold);
+  flex-shrink: 0;
+}
+
+.story-name {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.story-meta {
+  font-size: .75rem;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  font-weight: 500;
+}
+
+.story-stars {
+  color: var(--gold);
+  letter-spacing: 3px;
+  font-size: 1rem;
+  margin-bottom: 14px;
+}
+
+.story-text {
+  font-family: var(--font-serif);
+  font-size: 1.08rem;
+  font-style: italic;
+  line-height: 1.75;
+  color: var(--ice);
+  font-weight: 400;
+  margin: 0;
+}
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+@media (max-width: 767px) {
+  .expedition-card {
+    height: 380px;
+    margin-bottom: 24px;
+  }
+
+  .story-card {
+    padding: 28px 22px;
+  }
+
+  .story-avatar {
+    width: 52px;
+    height: 52px;
+  }
+
+  .story-name {
+    font-size: 1.15rem;
+  }
+
+  .story-text {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,87 @@
+/* ============================================================
+   ALPINE ASCENTS — TYPES & STYLES PAGE CSS
+   Loaded only on html/types-styles.html
+   Uses global styles from css/style.css
+   ============================================================ */
+
+/* ============================================================
+   DISCIPLINE CARD — icon override
+   These cards use icons instead of arrows, so no rotation
+   ============================================================ */
+.expedition-card .exp-arrow i {
+  font-size: 1.3rem;
+  transition: transform .4s ease;
+}
+
+.expedition-card:hover .exp-arrow {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #000;
+  transform: none; /* no rotation for icon cards */
+}
+
+.expedition-card:hover .exp-arrow i {
+  transform: scale(1.1);
+}
+
+/* ============================================================
+   INFO CARDS — detailed discipline breakdown
+   Uses .map-info-card base but enhanced for this page
+   ============================================================ */
+.map-info-card {
+  background: var(--dark-2);
+  border: 1px solid rgba(201, 162, 39, .2);
+  padding: 34px 30px;
+  border-radius: 4px;
+  height: 100%;
+  transition: all .4s ease;
+}
+
+.map-info-card:hover {
+  border-color: rgba(201, 162, 39, .5);
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, .35);
+}
+
+.map-info-title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.map-info-title i {
+  font-size: 1.4rem;
+  vertical-align: middle;
+}
+
+/* Info card bullets — smaller than default exp-list */
+.map-info-card .exp-list li {
+  border-bottom: none;
+  padding: 6px 0;
+  font-size: .88rem;
+}
+
+.map-info-card .exp-list li i {
+  font-size: 1.4rem;
+  line-height: 1;
+  margin-top: 0;
+}
+
+/* ============================================================
+   DISCIPLINE CARD HEIGHT — mobile tweak
+   ============================================================ */
+@media (max-width: 767px) {
+  .expedition-card {
+    height: 380px;
+    margin-bottom: 24px;
+  }
+}
+
+/* ============================================================
+   SECTION SPACING — smooth rhythm on this page
+   ============================================================ */
+.about-section + .expeditions-section {
+  padding-top: 100px;
+}

@@ -1,0 +1,140 @@
+/* ============================================================
+   ALPINE ASCENTS — RECORDS PAGE CSS
+   Loaded only on html/records.html
+   Uses global styles from css/style.css
+   ============================================================ */
+
+/* ============================================================
+   RECORD CARD ICON OVERRIDE
+   ============================================================ */
+.expedition-card .exp-arrow i {
+  font-size: 1.3rem;
+  transition: transform .4s ease;
+}
+
+.expedition-card:hover .exp-arrow {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #000;
+  transform: none;
+}
+
+.expedition-card:hover .exp-arrow i {
+  transform: scale(1.1);
+}
+
+/* ============================================================
+   RECORDS TABLE
+   ============================================================ */
+.records-table-wrap {
+  background: var(--dark-2);
+  border: 1px solid rgba(201, 162, 39, .2);
+  border-radius: 4px;
+  padding: 10px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, .4);
+}
+
+.records-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--ice);
+  margin: 0;
+}
+
+.records-table thead {
+  background: linear-gradient(135deg, rgba(201, 162, 39, .18), rgba(201, 162, 39, .08));
+}
+
+.records-table th {
+  font-family: var(--font-sans);
+  font-size: .72rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  font-weight: 600;
+  padding: 20px 24px;
+  text-align: left;
+  border-bottom: 1px solid rgba(201, 162, 39, .3);
+}
+
+.records-table td {
+  padding: 20px 24px;
+  font-size: .92rem;
+  font-weight: 300;
+  color: var(--ice);
+  border-bottom: 1px solid rgba(232, 238, 245, .06);
+  vertical-align: middle;
+}
+
+.records-table tbody tr {
+  transition: background .3s ease;
+}
+
+.records-table tbody tr:hover {
+  background: rgba(201, 162, 39, .06);
+}
+
+.records-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* First column — record name (bold, gold) */
+.records-table td:first-child {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Last column — year (gold, serif) */
+.records-table td:last-child {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--gold-light);
+  font-weight: 600;
+  text-align: right;
+}
+
+.records-table th:last-child {
+  text-align: right;
+}
+
+/* ============================================================
+   MOBILE TABLE
+   ============================================================ */
+@media (max-width: 767px) {
+  .records-table th {
+    padding: 14px 12px;
+    font-size: .62rem;
+    letter-spacing: .15em;
+  }
+
+  .records-table td {
+    padding: 14px 12px;
+    font-size: .82rem;
+  }
+
+  .records-table td:first-child {
+    font-size: .9rem;
+  }
+
+  .records-table td:last-child {
+    font-size: .95rem;
+  }
+
+  .expedition-card {
+    height: 380px;
+    margin-bottom: 24px;
+  }
+}
+
+/* ============================================================
+   TABLET
+   ============================================================ */
+@media (min-width: 768px) and (max-width: 991px) {
+  .records-table th,
+  .records-table td {
+    padding: 16px 18px;
+  }
+}
