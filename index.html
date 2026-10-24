@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alpine Ascents — Premium guided mountaineering expeditions to the world's most iconic peaks since 1998.">
+  <title>Alpine Ascents — Premium Mountain Climbing Expeditions</title>
+  <!-- browser logo -->
+  <link rel="icon" type="image/png" href="images/logo.png/logo1.png">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- GLOBAL CSS (css folder) -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- HOME CSS (root mein — same folder) -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- ============================================
+       PRELOADER / CINEMATIC VIDEO INTRO
+  ============================================= -->
+  <div id="preloader">
+    <video id="introVideo" autoplay muted playsinline preload="auto"
+           poster="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1920&q=80">
+      <source src="videos/video1.mp4" type="video/mp4">
+    </video>
+
+    <div class="preloader-overlay">
+      <img src="images/logo.png/logo1.png" alt="Alpine Ascents Logo" class="preloader-logo">
+      <h1 class="preloader-brand">Alpine Ascents</h1>
+      <p class="preloader-sub">Beyond The Summit</p>
+    </div>
+
+    <div class="video-progress" id="videoProgress"></div>
+    <button class="skip-btn" id="skipBtn">Skip Intro <i class="bi bi-arrow-right"></i></button>
+  </div>
+
+
+  <!-- ============================================
+       MAIN CONTENT WRAPPER
+  ============================================= -->
+  <div id="mainContent">
+
+    <!-- ==========================================
+         NAVBAR WITH LOGO + DROPDOWNS
+    =========================================== -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="images/logo.png/logo1.png" alt="Alpine Ascents" class="brand-logo">
+          <span class="brand-text">ALPINE<span>·</span>ASCENTS</span>
+        </a>
+
+        <button class="navbar-toggler border-0" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list text-white fs-2"></i>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+          <ul class="navbar-nav align-items-lg-center">
+
+            <!-- Home -->
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+
+            <!-- LEARN (Dropdown → html/ folder) -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="learnDropdown"
+                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Learn
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="learnDropdown">
+                <li><a class="dropdown-item" href="html/history.html"><i class="bi bi-clock-history"></i> History</a></li>
+                <li><a class="dropdown-item" href="html/types-styles.html"><i class="bi bi-diagram-3"></i> Types &amp; Styles</a></li>
+                <li><a class="dropdown-item" href="html/techniques.html"><i class="bi bi-tools"></i> Techniques</a></li>
+                <li><a class="dropdown-item" href="html/sheltering.html"><i class="bi bi-house-door"></i> Sheltering</a></li>
+              </ul>
+            </li>
+
+            <!-- SAFETY (Dropdown → html/ folder) -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="safetyDropdown"
+                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Safety
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="safetyDropdown">
+                <li><a class="dropdown-item" href="html/hazards-safety.html"><i class="bi bi-shield-exclamation"></i> Hazards &amp; Safety</a></li>
+                <li><a class="dropdown-item" href="html/guidelines.html"><i class="bi bi-journal-check"></i> Guidelines</a></li>
+              </ul>
+            </li>
+
+            <!-- COMMUNITY (Dropdown → html/ folder) -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="communityDropdown"
+                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Community
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="communityDropdown">
+                <li><a class="dropdown-item" href="html/records.html"><i class="bi bi-trophy"></i> Mountaineering Records</a></li>
+                <li><a class="dropdown-item" href="html/organizations.html"><i class="bi bi-people"></i> Organizations &amp; Clubs</a></li>
+                <li><a class="dropdown-item" href="html/success-stories.html"><i class="bi bi-star"></i> Success Stories</a></li>
+              </ul>
+            </li>
+
+            <!-- MEDIA (Dropdown → html/ folder) -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="mediaDropdown"
+                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Media
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="mediaDropdown">
+                <li><a class="dropdown-item" href="html/gallery.html"><i class="bi bi-images"></i> Gallery</a></li>
+                <li><a class="dropdown-item" href="html/latest-developments.html"><i class="bi bi-newspaper"></i> Latest Developments</a></li>
+              </ul>
+            </li>
+
+            <!-- Contact -->
+            <li class="nav-item">
+              <a class="nav-link" href="html/contact.html">Contact</a>
+            </li>
+
+            <!-- CTA -->
+            <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+              <a class="btn btn-gold" href="html/booking.html">Book Expedition</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- ==========================================
+         HERO SECTION
+    =========================================== -->
+    <header class="hero">
+      <video class="hero-video" autoplay muted loop playsinline
+             poster="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1920&q=80">
+        <source src="videos/video.mp4" type="video/mp4">
+      </video>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <img src="images/logo.png" alt="Alpine Ascents" class="hero-logo">
+        <div class="hero-eyebrow">Est. 1998 &nbsp;·&nbsp; Worldwide Expeditions</div>
+        <h1 class="hero-title">
+          Where The Earth <br>
+          <span class="italic">Touches The Sky</span>
+        </h1>
+        <p class="hero-desc">
+          Guided ascents to the world's most iconic peaks. Expert-led expeditions,
+          uncompromising safety, and journeys that redefine human limits.
+        </p>
+        <div class="hero-btns">
+          <a href="html/booking.html" class="btn btn-gold me-2 mb-2">Reserve Your Ascent</a>
+          <a href="html/types-styles.html" class="btn btn-outline-ice mb-2">Explore Expeditions</a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </header>
+
+
+    <!-- ==========================================
+         STATS SECTION
+    =========================================== -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-num" data-count="27">0</div>
+              <div class="stat-label">Years Guiding</div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-num" data-count="140">0</div>
+              <div class="stat-label">Summits Reached</div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-num" data-count="8500">0</div>
+              <div class="stat-label">Happy Climbers</div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-num" data-count="100">0</div>
+              <div class="stat-label">% Safety Record</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         ABOUT / WHY US SECTION
+    =========================================== -->
+    <section class="about-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+
+          <div class="col-lg-6 reveal">
+            <div class="feature-img-wrap">
+              <img src="images/image1.jpeg"
+                   alt="Mountaineer climbing a snowy ridge">
+              <div class="feature-badge">Since 1998</div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal">
+            <span class="section-eyebrow">The Alpine Ascents Difference</span>
+            <h2 class="section-title">
+              Built For Those Who <span class="italic">Aim Higher</span>
+            </h2>
+            <p class="section-desc">
+              We don't just take you to the summit — we craft the journey. Every expedition
+              is led by certified IFMGA guides with decades of high-altitude experience,
+              backed by rigorous safety protocols and world-class logistics.
+            </p>
+
+            <ul class="exp-list">
+              <li><i class="bi bi-patch-check-fill"></i> Certified IFMGA &amp; AMGA mountain guides</li>
+              <li><i class="bi bi-patch-check-fill"></i> Small teams — maximum 6 climbers per guide</li>
+              <li><i class="bi bi-patch-check-fill"></i> Custom acclimatization &amp; training programs</li>
+              <li><i class="bi bi-patch-check-fill"></i> Full expedition logistics, permits &amp; base camp support</li>
+            </ul>
+
+            <a href="html/history.html" class="btn btn-gold mt-2">Our Story</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         SIGNATURE EXPEDITIONS SECTION
+    =========================================== -->
+    <section class="expeditions-section">
+      <div class="container">
+
+        <div class="text-center mb-5 reveal">
+          <span class="section-eyebrow">Signature Expeditions</span>
+          <h2 class="section-title">Choose Your <span class="italic">Summit</span></h2>
+          <p class="section-desc mx-auto">
+            From first alpine climbs to 8000-meter challenges — curated routes
+            for every level of ambition.
+          </p>
+        </div>
+
+        <div class="row">
+
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-4 reveal">
+            <a href="html/types-styles.html" class="text-decoration-none">
+              <div class="expedition-card">
+                <img src="images/image2.jpg" alt="Mont Blanc">
+                <div class="exp-arrow"><i class="bi bi-arrow-up-right"></i></div>
+                <div class="expedition-body">
+                  <div class="exp-region">France · Italy</div>
+                  <h3 class="exp-title">Mont Blanc</h3>
+                  <div class="exp-meta">
+                    <span><i class="bi bi-bar-chart"></i>4,808 m</span>
+                    <span><i class="bi bi-clock"></i>8 Days</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-4 reveal">
+            <a href="html/types-styles.html" class="text-decoration-none">
+              <div class="expedition-card">
+                <img src="images/image3.jpg" alt="Matterhorn">
+                <div class="exp-arrow"><i class="bi bi-arrow-up-right"></i></div>
+                <div class="expedition-body">
+                  <div class="exp-region">Switzerland</div>
+                  <h3 class="exp-title">Matterhorn</h3>
+                  <div class="exp-meta">
+                    <span><i class="bi bi-bar-chart"></i>4,478 m</span>
+                    <span><i class="bi bi-clock"></i>10 Days</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-4 reveal">
+            <a href="html/types-styles.html" class="text-decoration-none">
+              <div class="expedition-card">
+                <img src="images/image4.jpg" alt="Mount Everest">
+                <div class="exp-arrow"><i class="bi bi-arrow-up-right"></i></div>
+                <div class="expedition-body">
+                  <div class="exp-region">Nepal · Tibet</div>
+                  <h3 class="exp-title">Mount Everest</h3>
+                  <div class="exp-meta">
+                    <span><i class="bi bi-bar-chart"></i>8,848 m</span>
+                    <span><i class="bi bi-clock"></i>60 Days</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6 col-lg-4 reveal">
+            <a href="html/types-styles.html" class="text-decoration-none">
+              <div class="expedition-card">
+                <img src="images/image5.webp" alt="Kilimanjaro">
+                <div class="exp-arrow"><i class="bi bi-arrow-up-right"></i></div>
+                <div class="expedition-body">
+                  <div class="exp-region">Tanzania</div>
+                  <h3 class="exp-title">Kilimanjaro</h3>
+                  <div class="exp-meta">
+                    <span><i class="bi bi-bar-chart"></i>5,895 m</span>
+                    <span><i class="bi bi-clock"></i>9 Days</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-md-6 col-lg-4 reveal">
+            <a href="html/types-styles.html" class="text-decoration-none">
+              <div class="expedition-card">
+                <img src="images/image6.jpg" alt="Denali">
+                <div class="exp-arrow"><i class="bi bi-arrow-up-right"></i></div>
+                <div class="expedition-body">
+                  <div class="exp-region">Alaska · USA</div>
+                  <h3 class="exp-title">Denali</h3>
+                  <div class="exp-meta">
+                    <span><i class="bi bi-bar-chart"></i>6,190 m</span>
+                    <span><i class="bi bi-clock"></i>21 Days</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-md-6 col-lg-4 reveal">
+            <a href="html/types-styles.html" class="text-decoration-none">
+              <div class="expedition-card">
+                <img src="images/image7.jpg" alt="Aconcagua">
+                <div class="exp-arrow"><i class="bi bi-arrow-up-right"></i></div>
+                <div class="expedition-body">
+                  <div class="exp-region">Argentina</div>
+                  <h3 class="exp-title">Aconcagua</h3>
+                  <div class="exp-meta">
+                    <span><i class="bi bi-bar-chart"></i>6,961 m</span>
+                    <span><i class="bi bi-clock"></i>18 Days</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-4 reveal">
+          <a href="html/types-styles.html" class="btn btn-outline-ice">View All Expeditions</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         GLOBAL LOCATIONS MAP SECTION
+    =========================================== -->
+    <section class="map-section">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <span class="section-eyebrow">Global Presence</span>
+          <h2 class="section-title">Where We <span class="italic">Climb</span></h2>
+          <p class="section-desc mx-auto">
+            Our expeditions span six continents — from the Alps to the Andes,
+            the Himalaya to the Alaska Range.
+          </p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-8 reveal">
+            <div class="map-wrapper">
+              <iframe
+                src="https://maps.google.com/maps?q=Mount%20Everest&t=&z=7&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="480"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Alpine Ascents Global Locations — Mount Everest Region">
+              </iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-4 reveal">
+            <div class="map-info-card">
+              <h3 class="map-info-title">Our Bases</h3>
+
+              <div class="map-location">
+                <i class="bi bi-geo-alt-fill"></i>
+                <div>
+                  <div class="map-loc-name">Chamonix, France</div>
+                  <div class="map-loc-desc">European HQ · Alps Operations</div>
+                </div>
+              </div>
+
+              <div class="map-location">
+                <i class="bi bi-geo-alt-fill"></i>
+                <div>
+                  <div class="map-loc-name">Kathmandu, Nepal</div>
+                  <div class="map-loc-desc">Himalaya Base · Everest Operations</div>
+                </div>
+              </div>
+
+              <div class="map-location">
+                <i class="bi bi-geo-alt-fill"></i>
+                <div>
+                  <div class="map-loc-name">Talkeetna, Alaska</div>
+                  <div class="map-loc-desc">Denali Base · North America</div>
+                </div>
+              </div>
+
+              <div class="map-location">
+                <i class="bi bi-geo-alt-fill"></i>
+                <div>
+                  <div class="map-loc-name">Mendoza, Argentina</div>
+                  <div class="map-loc-desc">Aconcagua Base · South America</div>
+                </div>
+              </div>
+
+              <div class="map-location">
+                <i class="bi bi-geo-alt-fill"></i>
+                <div>
+                  <div class="map-loc-name">Moshi, Tanzania</div>
+                  <div class="map-loc-desc">Kilimanjaro Base · Africa</div>
+                </div>
+              </div>
+
+              <a href="html/contact.html" class="btn btn-gold w-100 mt-3">Plan Your Route</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         PARALLAX QUOTE SECTION
+    =========================================== -->
+    <section class="parallax-quote">
+      <div class="container">
+        <p class="quote-text reveal">
+          "The summit is not the destination — it is the moment you discover who you truly are."
+        </p>
+        <div class="quote-author reveal">— Alpine Ascents Philosophy</div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         TESTIMONIALS SECTION
+    =========================================== -->
+    <section class="testimonials-section">
+      <div class="container">
+
+        <div class="text-center mb-5 reveal">
+          <span class="section-eyebrow">Climber Voices</span>
+          <h2 class="section-title">Stories From <span class="italic">The Summit</span></h2>
+        </div>
+
+        <div class="row g-4">
+
+          <div class="col-md-4 reveal">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">
+                "The most professional guiding outfit I've ever climbed with. Every detail —
+                from acclimatization to base camp food — was flawless."
+              </p>
+              <div class="testimonial-author">
+                <img class="testimonial-avatar" src="https://randomuser.me/api/portraits/men/32.jpg" alt="James Whitmore">
+                <div>
+                  <div class="author-name">James Whitmore</div>
+                  <div class="author-role">Everest Summit, 2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">
+                "I summited Kilimanjaro with Alpine Ascents and felt safe every single step.
+                The guides are legends — patient, skilled, and inspiring."
+              </p>
+              <div class="testimonial-author">
+                <img class="testimonial-avatar" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sara Lindqvist">
+                <div>
+                  <div class="author-name">Sara Lindqvist</div>
+                  <div class="author-role">Kilimanjaro Summit, 2022</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">
+                "From training plans to summit day, the team was with us at every turn.
+                This is what premium expedition service looks like."
+              </p>
+              <div class="testimonial-author">
+                <img class="testimonial-avatar" src="https://randomuser.me/api/portraits/men/68.jpg" alt="Daniel Okafor">
+                <div>
+                  <div class="author-name">Daniel Okafor</div>
+                  <div class="author-role">Matterhorn Summit, 2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         CTA SECTION
+    =========================================== -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-eyebrow">Your Ascent Begins Here</span>
+          <h2 class="section-title">
+            Ready To Stand <span class="italic">Above The Clouds?</span>
+          </h2>
+          <p class="section-desc mx-auto mb-4">
+            Limited spots per season. Secure your place on the next expedition
+            and start training with our expert guides.
+          </p>
+          <a href="html/booking.html" class="btn btn-gold me-2 mb-2">Book Your Expedition</a>
+          <a href="html/contact.html" class="btn btn-outline-ice mb-2">Talk To A Guide</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+    <footer>
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6">
+            <a href="index.html" class="footer-brand-wrap d-flex align-items-center mb-3">
+              <img src="images/logo.png/logo1.png" alt="Alpine Ascents" class="footer-logo">
+              <span class="footer-brand">ALPINE<span>·</span>ASCENTS</span>
+            </a>
+            <p class="footer-text">
+              Crafting world-class mountaineering expeditions since 1998.
+              Certified guides, uncompromising safety, and journeys that stay with you forever.
+            </p>
+            <div class="social-icons mt-3">
+              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+              <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-6">
+            <div class="footer-heading">Explore</div>
+            <ul class="footer-links">
+              <li><a href="html/history.html">History</a></li>
+              <li><a href="html/types-styles.html">Types &amp; Styles</a></li>
+              <li><a href="html/techniques.html">Techniques</a></li>
+              <li><a href="html/sheltering.html">Sheltering</a></li>
+              <li><a href="html/records.html">Records</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-6">
+            <div class="footer-heading">Resources</div>
+            <ul class="footer-links">
+              <li><a href="html/hazards-safety.html">Hazards &amp; Safety</a></li>
+              <li><a href="html/guidelines.html">Guidelines</a></li>
+              <li><a href="html/organizations.html">Organizations</a></li>
+              <li><a href="html/latest-developments.html">Latest Updates</a></li>
+              <li><a href="html/gallery.html">Gallery</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-6">
+            <div class="footer-heading">Company</div>
+            <ul class="footer-links">
+              <li><a href="html/success-stories.html">Success Stories</a></li>
+              <li><a href="html/booking.html">Book Expedition</a></li>
+              <li><a href="html/contact.html">Contact Us</a></li>
+              <li><a href="index.html">Home</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-6">
+            <div class="footer-heading">Get In Touch</div>
+            <ul class="footer-links">
+              <li><i class="bi bi-geo-alt me-2 text-warning"></i>Chamonix, France</li>
+              <li><i class="bi bi-envelope me-2 text-warning"></i>info@alpineascents.com</li>
+              <li><i class="bi bi-telephone me-2 text-warning"></i>+33 4 50 00 00 00</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          &copy; 2025 Alpine Ascents. All rights reserved. &nbsp;|&nbsp;
+          Designed for those who climb higher.
+        </div>
+
+      </div>
+    </footer>
+
+  </div><!-- /#mainContent -->
+
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- GLOBAL JS (js folder) -->
+  <script src="js/main.js"></script>
+  <!-- HOME JS (root mein) -->
+  <script src="index.js"></script>
+
+</body>
+</html>
