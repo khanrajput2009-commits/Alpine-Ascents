@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mountaineering hazards and safety — avalanches, altitude sickness, rockfall, weather, and how to stay safe in the mountains.">
+  <title>Hazards &amp; Safety — Alpine Ascents</title>
+  <!-- browser logo -->
+  <link rel="icon" type="image/png" href="../images/logo.png/logo1.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/hazards-safety.css">
+</head>
+<body>
+
+  <div id="mainContent" class="show">
+
+    <!-- ==========================================
+         NAVBAR
+    =========================================== -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+
+        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+          <img src="../images/logo.png/logo1.png" alt="Alpine Ascents" class="brand-logo">
+          <span class="brand-text">ALPINE<span>·</span>ASCENTS</span>
+        </a>
+
+        <button class="navbar-toggler border-0" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list text-white fs-2"></i>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+          <ul class="navbar-nav align-items-lg-center">
+
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="learnDropdown"
+                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Learn
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="learnDropdown">
+                <li><a class="dropdown-item" href="history.html"><i class="bi bi-clock-history"></i> History</a></li>
+                <li><a class="dropdown-item" href="types-styles.html"><i class="bi bi-diagram-3"></i> Types &amp; Styles</a></li>
+                <li><a class="dropdown-item" href="techniques.html"><i class="bi bi-tools"></i> Techniques</a></li>
+                <li><a class="dropdown-item" href="sheltering.html"><i class="bi bi-house-door"></i> Sheltering</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="safetyDropdown"
+                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Safety
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="safetyDropdown">
+                <li><a class="dropdown-item active" href="hazards-safety.html"><i class="bi bi-shield-exclamation"></i> Hazards &amp; Safety</a></li>
+                <li><a class="dropdown-item" href="guidelines.html"><i class="bi bi-journal-check"></i> Guidelines</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="communityDropdown"
+                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Community
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="communityDropdown">
+                <li><a class="dropdown-item" href="records.html"><i class="bi bi-trophy"></i> Mountaineering Records</a></li>
+                <li><a class="dropdown-item" href="organizations.html"><i class="bi bi-people"></i> Organizations &amp; Clubs</a></li>
+                <li><a class="dropdown-item" href="success-stories.html"><i class="bi bi-star"></i> Success Stories</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="mediaDropdown"
+                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Media
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="mediaDropdown">
+                <li><a class="dropdown-item" href="gallery.html"><i class="bi bi-images"></i> Gallery</a></li>
+                <li><a class="dropdown-item" href="latest-developments.html"><i class="bi bi-newspaper"></i> Latest Developments</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+
+            <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+              <a class="btn btn-gold" href="booking.html">Book Expedition</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- ==========================================
+         PAGE HERO
+    =========================================== -->
+    <header class="page-hero" style="background-image:url('../images/image35.jpeg');">
+      <div class="page-hero-overlay"></div>
+      <div class="container page-hero-content text-center">
+        <span class="section-eyebrow">Know Before You Go</span>
+        <h1 class="page-title">Hazards &amp; <span class="italic">Safety</span></h1>
+        <p class="page-subtitle">
+          The mountains are unforgiving — but with knowledge, preparation, 
+          and respect, they become a place of wonder, not danger.
+        </p>
+      </div>
+    </header>
+
+
+    <!-- ==========================================
+         INTRO
+    =========================================== -->
+    <section class="about-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+
+          <div class="col-lg-6 reveal">
+            <div class="feature-img-wrap">
+              <img src="../images/image36.jpeg"
+                   alt="Safety on the mountain">
+              <div class="feature-badge">Safety First</div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal">
+            <span class="section-eyebrow">Understanding The Risks</span>
+            <h2 class="section-title">
+              Respect The Mountain, <span class="italic">Return Home</span>
+            </h2>
+            <p class="section-desc">
+              Every mountaineer must understand the hazards that exist in the alpine environment. 
+              The most dangerous climber is the one who thinks they're safe — the best climber 
+              is the one who knows what they don't know.
+            </p>
+
+            <ul class="exp-list mt-4">
+              <li><i class="bi bi-patch-check-fill"></i> Avalanche awareness &amp; snow assessment</li>
+              <li><i class="bi bi-patch-check-fill"></i> Altitude sickness prevention &amp; treatment</li>
+              <li><i class="bi bi-patch-check-fill"></i> Weather reading &amp; storm avoidance</li>
+              <li><i class="bi bi-patch-check-fill"></i> Rockfall, icefall, and serac awareness</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         HAZARD CARDS
+    =========================================== -->
+    <section class="expeditions-section">
+      <div class="container">
+
+        <div class="text-center mb-5 reveal">
+          <span class="section-eyebrow">Major Hazards</span>
+          <h2 class="section-title">The Dangers <span class="italic">To Know</span></h2>
+          <p class="section-desc mx-auto">
+            Six major hazard categories every mountaineer must understand and prepare for.
+          </p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="expedition-card">
+              <img src="../images/image29.jpg" alt="Avalanche">
+              <div class="exp-arrow"><i class="bi bi-snow2"></i></div>
+              <div class="expedition-body">
+                <div class="exp-region">Snow Hazard</div>
+                <h3 class="exp-title">Avalanche</h3>
+                <div class="exp-meta">
+                  <span><i class="bi bi-shield-exclamation"></i>Life-Threatening</span>
+                  <span><i class="bi bi-clock"></i>Seasonal</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="expedition-card">
+              <img src="../images/image30.jpg" alt="Altitude Sickness">
+              <div class="exp-arrow"><i class="bi bi-lungs"></i></div>
+              <div class="expedition-body">
+                <div class="exp-region">Altitude</div>
+                <h3 class="exp-title">Altitude Sickness</h3>
+                <div class="exp-meta">
+                  <span><i class="bi bi-heart-pulse"></i>High-Alt</span>
+                  <span><i class="bi bi-clock"></i>Acute</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="expedition-card">
+              <img src="../images/images31.jpg" alt="Rockfall">
+              <div class="exp-arrow"><i class="bi bi-diamond"></i></div>
+              <div class="expedition-body">
+                <div class="exp-region">Terrain</div>
+                <h3 class="exp-title">Rockfall &amp; Icefall</h3>
+                <div class="exp-meta">
+                  <span><i class="bi bi-arrow-down"></i>Impact Hazard</span>
+                  <span><i class="bi bi-clock"></i>Sudden</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="expedition-card">
+              <img src="../images/image32.jpg" alt="Weather">
+              <div class="exp-arrow"><i class="bi bi-cloud-lightning-rain"></i></div>
+              <div class="expedition-body">
+                <div class="exp-region">Environment</div>
+                <h3 class="exp-title">Weather Storms</h3>
+                <div class="exp-meta">
+                  <span><i class="bi bi-wind"></i>Unpredictable</span>
+                  <span><i class="bi bi-clock"></i>Fast-Moving</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="expedition-card">
+              <img src="../images/image33.jpg" alt="Crevasses">
+              <div class="exp-arrow"><i class="bi bi-signpost-split"></i></div>
+              <div class="expedition-body">
+                <div class="exp-region">Glacier</div>
+                <h3 class="exp-title">Crevasses</h3>
+                <div class="exp-meta">
+                  <span><i class="bi bi-dash-circle"></i>Hidden Danger</span>
+                  <span><i class="bi bi-clock"></i>Constant</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="expedition-card">
+              <img src="../images/images34.jpg" alt="Hypothermia">
+              <div class="exp-arrow"><i class="bi bi-thermometer-snow"></i></div>
+              <div class="expedition-body">
+                <div class="exp-region">Cold</div>
+                <h3 class="exp-title">Hypothermia</h3>
+                <div class="exp-meta">
+                  <span><i class="bi bi-thermometer-low"></i>Body Temp</span>
+                  <span><i class="bi bi-clock"></i>Gradual</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         DETAILED HAZARDS
+    =========================================== -->
+    <section class="about-section">
+      <div class="container">
+
+        <div class="text-center mb-5 reveal">
+          <span class="section-eyebrow">In Detail</span>
+          <h2 class="section-title">Understanding <span class="italic">Each Hazard</span></h2>
+        </div>
+
+        <div class="row g-4">
+
+          <div class="col-lg-6 reveal">
+            <div class="map-info-card h-100">
+              <h3 class="map-info-title"><i class="bi bi-snow2 me-2 text-warning"></i>Avalanche</h3>
+              <p class="section-desc mb-3">
+                Avalanches kill more mountaineers than any other single hazard. 
+                Most victims trigger the slide themselves — understanding snow stability is critical.
+              </p>
+              <ul class="exp-list mb-0">
+                <li><i class="bi bi-dot"></i> Check avalanche forecast before every trip</li>
+                <li><i class="bi bi-dot"></i> Carry transceiver, probe, shovel — and know how to use them</li>
+                <li><i class="bi bi-dot"></i> Avoid slopes 30°–45° after recent snowfall</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal">
+            <div class="map-info-card h-100">
+              <h3 class="map-info-title"><i class="bi bi-lungs me-2 text-warning"></i>Altitude Sickness</h3>
+              <p class="section-desc mb-3">
+                Above 2,500 m, the body struggles to absorb oxygen. AMS, HACE, and HAPE 
+                can escalate from mild headache to fatal within hours.
+              </p>
+              <ul class="exp-list mb-0">
+                <li><i class="bi bi-dot"></i> Ascend slowly — no more than 500 m/day above 3,000 m</li>
+                <li><i class="bi bi-dot"></i> Descend immediately if symptoms worsen</li>
+                <li><i class="bi bi-dot"></i> Know the difference: AMS vs. HACE vs. HAPE</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal">
+            <div class="map-info-card h-100">
+              <h3 class="map-info-title"><i class="bi bi-diamond me-2 text-warning"></i>Rockfall &amp; Icefall</h3>
+              <p class="section-desc mb-3">
+                Falling rock and ice are unpredictable and deadly. Rockfall is more common 
+                in the afternoon as the sun warms the mountain — climb early.
+              </p>
+              <ul class="exp-list mb-0">
+                <li><i class="bi bi-dot"></i> Wear a helmet — always</li>
+                <li><i class="bi bi-dot"></i> Move fast through exposed areas</li>
+                <li><i class="bi bi-dot"></i> Avoid climbing below seracs on warm days</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal">
+            <div class="map-info-card h-100">
+              <h3 class="map-info-title"><i class="bi bi-cloud-lightning-rain me-2 text-warning"></i>Weather Storms</h3>
+              <p class="section-desc mb-3">
+                Mountain weather changes fast. Storms can move in within minutes — 
+                lightning, high winds, and whiteout conditions are all lethal.
+              </p>
+              <ul class="exp-list mb-0">
+                <li><i class="bi bi-dot"></i> Get a detailed forecast before every climb</li>
+                <li><i class="bi bi-dot"></i> Turn around if clouds build and thunder starts</li>
+                <li><i class="bi bi-dot"></i> Carry storm protection: shelter, layers, GPS</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal">
+            <div class="map-info-card h-100">
+              <h3 class="map-info-title"><i class="bi bi-signpost-split me-2 text-warning"></i>Crevasses</h3>
+              <p class="section-desc mb-3">
+                Hidden cracks in glaciers can be 30+ meters deep. Snow bridges over them 
+                may look solid but collapse without warning.
+              </p>
+              <ul class="exp-list mb-0">
+                <li><i class="bi bi-dot"></i> Rope up on any glacier — no exceptions</li>
+                <li><i class="bi bi-dot"></i> Probe suspicious snow bridges</li>
+                <li><i class="bi bi-dot"></i> Know crevasse rescue systems</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal">
+            <div class="map-info-card h-100">
+              <h3 class="map-info-title"><i class="bi bi-thermometer-snow me-2 text-warning"></i>Hypothermia</h3>
+              <p class="section-desc mb-3">
+                When the body loses heat faster than it can generate it, hypothermia sets in. 
+                It dulls judgment first — victims often don't realize they're in danger.
+              </p>
+              <ul class="exp-list mb-0">
+                <li><i class="bi bi-dot"></i> Stay dry — wet clothes drain body heat 25x faster</li>
+                <li><i class="bi bi-dot"></i> Eat high-calorie foods regularly</li>
+                <li><i class="bi bi-dot"></i> Watch for shivering, confusion, and slurred speech</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         STATS
+    =========================================== -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-num" data-count="90">0</div>
+              <div class="stat-label">% Avalanche Victims Self-Trigger</div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-num" data-count="2500">0</div>
+              <div class="stat-label">m AMS Threshold</div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-num" data-count="15">0</div>
+              <div class="stat-label">Min to Rescue Avalanche</div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-num" data-count="100">0</div>
+              <div class="stat-label">% Preparedness Saves</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         PARALLAX QUOTE
+    =========================================== -->
+    <section class="parallax-quote" style="background-image:url('https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=1920&q=80');">
+      <div class="container">
+        <p class="quote-text reveal">
+          "There are old climbers, and bold climbers — but no old bold climbers."
+        </p>
+        <div class="quote-author reveal">— Alpine Ascents Safety Philosophy</div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         CTA
+    =========================================== -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-eyebrow">Safety Is A Skill</span>
+          <h2 class="section-title">
+            Train <span class="italic">Before You Climb</span>
+          </h2>
+          <p class="section-desc mx-auto mb-4">
+            Our guides teach avalanche rescue, altitude protocols, and emergency response. 
+            Learn before you need it.
+          </p>
+          <a href="booking.html" class="btn btn-gold me-2 mb-2">Book Training</a>
+          <a href="guidelines.html" class="btn btn-outline-ice mb-2">Read Guidelines</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+    <footer>
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6">
+            <a href="../index.html" class="footer-brand-wrap d-flex align-items-center mb-3">
+              <img src="../images/logo.png/logo1.png" alt="Alpine Ascents" class="footer-logo">
+              <span class="footer-brand">ALPINE<span>·</span>ASCENTS</span>
+            </a>
+            <p class="footer-text">
+              Crafting world-class mountaineering expeditions since 1998.
+              Certified guides, uncompromising safety, and journeys that stay with you forever.
+            </p>
+            <div class="social-icons mt-3">
+              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+              <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-6">
+            <div class="footer-heading">Explore</div>
+            <ul class="footer-links">
+              <li><a href="history.html">History</a></li>
+              <li><a href="types-styles.html">Types &amp; Styles</a></li>
+              <li><a href="techniques.html">Techniques</a></li>
+              <li><a href="sheltering.html">Sheltering</a></li>
+              <li><a href="records.html">Records</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-6">
+            <div class="footer-heading">Resources</div>
+            <ul class="footer-links">
+              <li><a href="hazards-safety.html">Hazards &amp; Safety</a></li>
+              <li><a href="guidelines.html">Guidelines</a></li>
+              <li><a href="organizations.html">Organizations</a></li>
+              <li><a href="latest-developments.html">Latest Updates</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-6">
+            <div class="footer-heading">Company</div>
+            <ul class="footer-links">
+              <li><a href="success-stories.html">Success Stories</a></li>
+              <li><a href="booking.html">Book Expedition</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="../index.html">Home</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-6">
+            <div class="footer-heading">Get In Touch</div>
+            <ul class="footer-links">
+              <li><i class="bi bi-geo-alt me-2 text-warning"></i>Chamonix, France</li>
+              <li><i class="bi bi-envelope me-2 text-warning"></i>info@alpineascents.com</li>
+              <li><i class="bi bi-telephone me-2 text-warning"></i>+33 4 50 00 00 00</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          &copy; 2025 Alpine Ascents. All rights reserved. &nbsp;|&nbsp;
+          Designed for those who climb higher.
+        </div>
+
+      </div>
+    </footer>
+
+  </div><!-- /#mainContent -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/hazards-safety.js"></script>
+
+</body>
+</html>

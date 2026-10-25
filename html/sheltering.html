@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mountaineering sheltering — tents, bivouacs, snow caves, and high-altitude huts for every expedition.">
+  <title>Sheltering — Alpine Ascents</title>
+  <!-- browser logo -->
+  <link rel="icon" type="image/png" href="../images/logo.png/logo1.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/sheltering.css">
+</head>
+<body>
+
+  <div id="mainContent" class="show">
+
+    <!-- ==========================================
+         NAVBAR
+    =========================================== -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+
+        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+          <img src="../images/logo.png/logo1.png" alt="Alpine Ascents" class="brand-logo">
+          <span class="brand-text">ALPINE<span>·</span>ASCENTS</span>
+        </a>
+
+        <button class="navbar-toggler border-0" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list text-white fs-2"></i>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+          <ul class="navbar-nav align-items-lg-center">
+
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="learnDropdown"
+                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Learn
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="learnDropdown">
+                <li><a class="dropdown-item" href="history.html"><i class="bi bi-clock-history"></i> History</a></li>
+                <li><a class="dropdown-item" href="types-styles.html"><i class="bi bi-diagram-3"></i> Types &amp; Styles</a></li>
+                <li><a class="dropdown-item" href="techniques.html"><i class="bi bi-tools"></i> Techniques</a></li>
+                <li><a class="dropdown-item active" href="sheltering.html"><i class="bi bi-house-door"></i> Sheltering</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="safetyDropdown"
+                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Safety
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="safetyDropdown">
+                <li><a class="dropdown-item" href="hazards-safety.html"><i class="bi bi-shield-exclamation"></i> Hazards &amp; Safety</a></li>
+                <li><a class="dropdown-item" href="guidelines.html"><i class="bi bi-journal-check"></i> Guidelines</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="communityDropdown"
+                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Community
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="communityDropdown">
+                <li><a class="dropdown-item" href="records.html"><i class="bi bi-trophy"></i> Mountaineering Records</a></li>
+                <li><a class="dropdown-item" href="organizations.html"><i class="bi bi-people"></i> Organizations &amp; Clubs</a></li>
+                <li><a class="dropdown-item" href="success-stories.html"><i class="bi bi-star"></i> Success Stories</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="mediaDropdown"
+                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Media
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="mediaDropdown">
+                <li><a class="dropdown-item" href="gallery.html"><i class="bi bi-images"></i> Gallery</a></li>
+                <li><a class="dropdown-item" href="latest-developments.html"><i class="bi bi-newspaper"></i> Latest Developments</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+
+            <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+              <a class="btn btn-gold" href="booking.html">Book Expedition</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- ==========================================
+         PAGE HERO
+    =========================================== -->
+    <header class="page-hero" style="background-image:url('../images/image21.jpeg');">
+      <div class="page-hero-overlay"></div>
+      <div class="container page-hero-content text-center">
+        <span class="section-eyebrow">A Home On The Mountain</span>
+        <h1 class="page-title">Sheltering <span class="italic">In The Wild</span></h1>
+        <p class="page-subtitle">
+          From high-altitude huts to snow caves carved into glaciers — 
+          every mountaineer needs a safe haven.
+        </p>
+      </div>
+    </header>
+
+
+    <!-- ==========================================
+         INTRO
+    =========================================== -->
+    <section class="about-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+
+          <div class="col-lg-6 reveal">
+            <div class="feature-img-wrap">
+              <img src="../images/image22.jpeg"
+                   alt="Mountain tent at high camp">
+              <div class="feature-badge">Home Above The Clouds</div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal">
+            <span class="section-eyebrow">Rest &amp; Recover</span>
+            <h2 class="section-title">
+              Shelter Is <span class="italic">Survival</span>
+            </h2>
+            <p class="section-desc">
+              At high altitude, a proper shelter can mean the difference between life 
+              and death. Whether it's a purpose-built hut, a four-season tent, or a 
+              snow cave dug in an emergency, knowing how to shelter is a core skill.
+            </p>
+
+            <ul class="exp-list mt-4">
+              <li><i class="bi bi-patch-check-fill"></i> Tents for every terrain and season</li>
+              <li><i class="bi bi-patch-check-fill"></i> Snow caves &amp; bivouacs for emergencies</li>
+              <li><i class="bi bi-patch-check-fill"></i> Alpine huts and base camp systems</li>
+              <li><i class="bi bi-patch-check-fill"></i> Insulation, ventilation, and location choice</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         SHELTER TYPES CARDS
+    =========================================== -->
+    <section class="expeditions-section">
+      <div class="container">
+
+        <div class="text-center mb-5 reveal">
+          <span class="section-eyebrow">Types Of Shelter</span>
+          <h2 class="section-title">Choose Your <span class="italic">Haven</span></h2>
+          <p class="section-desc mx-auto">
+            Six primary shelter types used by mountaineers around the world — each with its own strengths and limitations.
+          </p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="expedition-card">
+              <img src="../images/images23.jpg" alt="Four-Season Tent">
+              <div class="exp-arrow"><i class="bi bi-house"></i></div>
+              <div class="expedition-body">
+                <div class="exp-region">Standard</div>
+                <h3 class="exp-title">Four-Season Tent</h3>
+                <div class="exp-meta">
+                  <span><i class="bi bi-shield"></i>Wind-Resistant</span>
+                  <span><i class="bi bi-clock"></i>Portable</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="expedition-card">
+              <img src="../images/image24.webp" alt="Snow Cave">
+              <div class="exp-arrow"><i class="bi bi-snow2"></i></div>
+              <div class="expedition-body">
+                <div class="exp-region">Emergency</div>
+                <h3 class="exp-title">Snow Cave</h3>
+                <div class="exp-meta">
+                  <span><i class="bi bi-snow"></i>Insulated</span>
+                  <span><i class="bi bi-clock"></i>Emergency</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="expedition-card">
+              <img src="../images/image25.webp" alt="Bivouac Sack">
+              <div class="exp-arrow"><i class="bi bi-bag"></i></div>
+              <div class="expedition-body">
+                <div class="exp-region">Minimalist</div>
+                <h3 class="exp-title">Bivouac Sack</h3>
+                <div class="exp-meta">
+                  <span><i class="bi bi-feather"></i>Ultralight</span>
+                  <span><i class="bi bi-clock"></i>Fast</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="expedition-card">
+              <img src="../images/image26.jpg" alt="Alpine Hut">
+              <div class="exp-arrow"><i class="bi bi-building"></i></div>
+              <div class="expedition-body">
+                <div class="exp-region">European Alps</div>
+                <h3 class="exp-title">Alpine Hut</h3>
+                <div class="exp-meta">
+                  <span><i class="bi bi-house-door"></i>Staffed</span>
+                  <span><i class="bi bi-clock"></i>Fixed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="expedition-card">
+              <img src="../images/image27.jpg" alt="Base Camp">
+              <div class="exp-arrow"><i class="bi bi-flag"></i></div>
+              <div class="expedition-body">
+                <div class="exp-region">Expedition</div>
+                <h3 class="exp-title">Base Camp</h3>
+                <div class="exp-meta">
+                  <span><i class="bi bi-people"></i>Team Hub</span>
+                  <span><i class="bi bi-clock"></i>Long-Term</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="expedition-card">
+              <img src="../images/image28.jpg" alt="Portaledge">
+              <div class="exp-arrow"><i class="bi bi-hdd-stack"></i></div>
+              <div class="expedition-body">
+                <div class="exp-region">Big Wall</div>
+                <h3 class="exp-title">Portaledge</h3>
+                <div class="exp-meta">
+                  <span><i class="bi bi-arrow-up"></i>Hanging</span>
+                  <span><i class="bi bi-clock"></i>Advanced</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         DETAILED SHELTERS
+    =========================================== -->
+    <section class="about-section">
+      <div class="container">
+
+        <div class="text-center mb-5 reveal">
+          <span class="section-eyebrow">In Detail</span>
+          <h2 class="section-title">Understanding <span class="italic">Each Shelter</span></h2>
+        </div>
+
+        <div class="row g-4">
+
+          <div class="col-lg-6 reveal">
+            <div class="map-info-card h-100">
+              <h3 class="map-info-title"><i class="bi bi-house me-2 text-warning"></i>Four-Season Tents</h3>
+              <p class="section-desc mb-3">
+                The most common mountaineering shelter. Built to withstand high winds 
+                and heavy snow loads, with reinforced poles and a sturdy fly.
+              </p>
+              <ul class="exp-list mb-0">
+                <li><i class="bi bi-dot"></i> Rated for 4 seasons (winter-capable)</li>
+                <li><i class="bi bi-dot"></i> Geodesic or tunnel designs for wind resistance</li>
+                <li><i class="bi bi-dot"></i> Examples: Hilleberg, MSR, Mountain Hardwear</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal">
+            <div class="map-info-card h-100">
+              <h3 class="map-info-title"><i class="bi bi-snow2 me-2 text-warning"></i>Snow Caves</h3>
+              <p class="section-desc mb-3">
+                A life-saving shelter in emergencies. Snow provides excellent insulation — 
+                temperatures inside a well-built snow cave stay near freezing even when outside is -30°C.
+              </p>
+              <ul class="exp-list mb-0">
+                <li><i class="bi bi-dot"></i> Dig into a snow drift on a slope</li>
+                <li><i class="bi bi-dot"></i> Sleeping platform higher than entrance (cold air sinks)</li>
+                <li><i class="bi bi-dot"></i> Ventilation hole essential to prevent CO₂ buildup</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal">
+            <div class="map-info-card h-100">
+              <h3 class="map-info-title"><i class="bi bi-bag me-2 text-warning"></i>Bivouac Sacks</h3>
+              <p class="section-desc mb-3">
+                Emergency or fast-and-light shelter — a waterproof outer layer around your 
+                sleeping bag. Used when you can't reach a tent or hut.
+              </p>
+              <ul class="exp-list mb-0">
+                <li><i class="bi bi-dot"></i> Ultra-lightweight and packable</li>
+                <li><i class="bi bi-dot"></i> Used in alpine-style fast ascents</li>
+                <li><i class="bi bi-dot"></i> Can be combined with a tarp or bothy bag</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal">
+            <div class="map-info-card h-100">
+              <h3 class="map-info-title"><i class="bi bi-building me-2 text-warning"></i>Alpine Huts</h3>
+              <p class="section-desc mb-3">
+                Fixed mountain shelters on popular routes in the European Alps. 
+                Staffed huts offer meals, bunks, and a warm place to recover.
+              </p>
+              <ul class="exp-list mb-0">
+                <li><i class="bi bi-dot"></i> Typically at 2,000–4,000 m elevation</li>
+                <li><i class="bi bi-dot"></i> Reservations often required in summer</li>
+                <li><i class="bi bi-dot"></i> Examples: Chamonix's Cosmiques, Zermatt's Hörnli</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal">
+            <div class="map-info-card h-100">
+              <h3 class="map-info-title"><i class="bi bi-flag me-2 text-warning"></i>Base Camps</h3>
+              <p class="section-desc mb-3">
+                The logistical heart of an expedition. Base camps are semi-permanent 
+                villages with tents for sleeping, cooking, eating, and medical care.
+              </p>
+              <ul class="exp-list mb-0">
+                <li><i class="bi bi-dot"></i> Sites for weeks or months of operation</li>
+                <li><i class="bi bi-dot"></i> Larger teams, medical supplies, and communications</li>
+                <li><i class="bi bi-dot"></i> Examples: Everest BC, Denali BC</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal">
+            <div class="map-info-card h-100">
+              <h3 class="map-info-title"><i class="bi bi-hdd-stack me-2 text-warning"></i>Portaledges</h3>
+              <p class="section-desc mb-3">
+                Hanging platforms for sleeping on big-wall climbs. Suspended from anchor points 
+                on vertical rock faces, portaledges allow multi-day ascents of El Capitan-sized walls.
+              </p>
+              <ul class="exp-list mb-0">
+                <li><i class="bi bi-dot"></i> Used in Yosemite, Patagonia, and Karakoram big walls</li>
+                <li><i class="bi bi-dot"></i> Suspended from bombproof anchors</li>
+                <li><i class="bi bi-dot"></i> Advanced skill: rigging and deployment</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         STATS
+    =========================================== -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-num" data-count="6">0</div>
+              <div class="stat-label">Shelter Types</div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-num" data-count="1000">0</div>
+              <div class="stat-label">+ Alpine Huts</div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-num" data-count="8848">0</div>
+              <div class="stat-label">Everest BC Altitude</div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-num" data-count="-30">0</div>
+              <div class="stat-label">°C Rated Tents</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         PARALLAX QUOTE
+    =========================================== -->
+    <section class="parallax-quote" style="background-image:url('https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=1920&q=80');">
+      <div class="container">
+        <p class="quote-text reveal">
+          "The mountain gives you no shelter — you must bring your own."
+        </p>
+        <div class="quote-author reveal">— Alpine Ascents Wisdom</div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         CTA
+    =========================================== -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-eyebrow">Gear For Every Summit</span>
+          <h2 class="section-title">
+            Shelter Is <span class="italic">Safety</span>
+          </h2>
+          <p class="section-desc mx-auto mb-4">
+            Our guides can advise on the right shelter system for your expedition.
+          </p>
+          <a href="booking.html" class="btn btn-gold me-2 mb-2">Book Expedition</a>
+          <a href="hazards-safety.html" class="btn btn-outline-ice mb-2">Safety Guide</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+    <footer>
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6">
+            <a href="../index.html" class="footer-brand-wrap d-flex align-items-center mb-3">
+              <img src="../images/logo.png/logo1.png" alt="Alpine Ascents" class="footer-logo">
+              <span class="footer-brand">ALPINE<span>·</span>ASCENTS</span>
+            </a>
+            <p class="footer-text">
+              Crafting world-class mountaineering expeditions since 1998.
+              Certified guides, uncompromising safety, and journeys that stay with you forever.
+            </p>
+            <div class="social-icons mt-3">
+              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+              <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-6">
+            <div class="footer-heading">Explore</div>
+            <ul class="footer-links">
+              <li><a href="history.html">History</a></li>
+              <li><a href="types-styles.html">Types &amp; Styles</a></li>
+              <li><a href="techniques.html">Techniques</a></li>
+              <li><a href="sheltering.html">Sheltering</a></li>
+              <li><a href="records.html">Records</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-6">
+            <div class="footer-heading">Resources</div>
+            <ul class="footer-links">
+              <li><a href="hazards-safety.html">Hazards &amp; Safety</a></li>
+              <li><a href="guidelines.html">Guidelines</a></li>
+              <li><a href="organizations.html">Organizations</a></li>
+              <li><a href="latest-developments.html">Latest Updates</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-6">
+            <div class="footer-heading">Company</div>
+            <ul class="footer-links">
+              <li><a href="success-stories.html">Success Stories</a></li>
+              <li><a href="booking.html">Book Expedition</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="../index.html">Home</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-6">
+            <div class="footer-heading">Get In Touch</div>
+            <ul class="footer-links">
+              <li><i class="bi bi-geo-alt me-2 text-warning"></i>Chamonix, France</li>
+              <li><i class="bi bi-envelope me-2 text-warning"></i>info@alpineascents.com</li>
+              <li><i class="bi bi-telephone me-2 text-warning"></i>+33 4 50 00 00 00</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          &copy; 2025 Alpine Ascents. All rights reserved. &nbsp;|&nbsp;
+          Designed for those who climb higher.
+        </div>
+
+      </div>
+    </footer>
+
+  </div><!-- /#mainContent -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/sheltering.js"></script>
+
+</body>
+</html>
