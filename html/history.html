@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The history of mountaineering — from the first ascents to the golden age of alpinism and modern Himalayan expeditions.">
+  <title>History — Alpine Ascents</title>
+  <!-- browser logo -->
+  <link rel="icon" type="image/png" href="../images/logo.png/logo1.png">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- GLOBAL CSS (ek folder upar) -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- HISTORY CSS (ek folder upar) -->
+  <link rel="stylesheet" href="../css/history.css">
+</head>
+<body>
+
+  <!-- Main content — no preloader on inner pages -->
+  <div id="mainContent" class="show">
+
+    <!-- ==========================================
+         NAVBAR
+    =========================================== -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+
+        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+          <img src="../images/logo.png/logo1.png" alt="Alpine Ascents" class="brand-logo">
+          <span class="brand-text">ALPINE<span>·</span>ASCENTS</span>
+        </a>
+
+        <button class="navbar-toggler border-0" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list text-white fs-2"></i>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+          <ul class="navbar-nav align-items-lg-center">
+
+            <!-- Home -->
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+
+            <!-- LEARN (Dropdown) -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="learnDropdown"
+                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Learn
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="learnDropdown">
+                <li><a class="dropdown-item active" href="history.html"><i class="bi bi-clock-history"></i> History</a></li>
+                <li><a class="dropdown-item" href="types-styles.html"><i class="bi bi-diagram-3"></i> Types &amp; Styles</a></li>
+                <li><a class="dropdown-item" href="techniques.html"><i class="bi bi-tools"></i> Techniques</a></li>
+                <li><a class="dropdown-item" href="sheltering.html"><i class="bi bi-house-door"></i> Sheltering</a></li>
+              </ul>
+            </li>
+
+            <!-- SAFETY -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="safetyDropdown"
+                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Safety
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="safetyDropdown">
+                <li><a class="dropdown-item" href="hazards-safety.html"><i class="bi bi-shield-exclamation"></i> Hazards &amp; Safety</a></li>
+                <li><a class="dropdown-item" href="guidelines.html"><i class="bi bi-journal-check"></i> Guidelines</a></li>
+              </ul>
+            </li>
+
+            <!-- COMMUNITY -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="communityDropdown"
+                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Community
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="communityDropdown">
+                <li><a class="dropdown-item" href="records.html"><i class="bi bi-trophy"></i> Mountaineering Records</a></li>
+                <li><a class="dropdown-item" href="organizations.html"><i class="bi bi-people"></i> Organizations &amp; Clubs</a></li>
+                <li><a class="dropdown-item" href="success-stories.html"><i class="bi bi-star"></i> Success Stories</a></li>
+              </ul>
+            </li>
+
+            <!-- MEDIA -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="mediaDropdown"
+                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Media
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="mediaDropdown">
+                <li><a class="dropdown-item" href="gallery.html"><i class="bi bi-images"></i> Gallery</a></li>
+                <li><a class="dropdown-item" href="latest-developments.html"><i class="bi bi-newspaper"></i> Latest Developments</a></li>
+              </ul>
+            </li>
+
+            <!-- Contact -->
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+
+            <!-- CTA -->
+            <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+              <a class="btn btn-gold" href="booking.html">Book Expedition</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- ==========================================
+         PAGE HERO
+    =========================================== -->
+    <header class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1920&q=80');">
+      <div class="page-hero-overlay"></div>
+      <div class="container page-hero-content text-center">
+        <span class="section-eyebrow">Our Legacy</span>
+        <h1 class="page-title">A History Carved <span class="italic">In Ice &amp; Stone</span></h1>
+        <p class="page-subtitle">
+          From the first summit attempts to modern high-altitude ascents — 
+          the story of humanity's pursuit of the sky.
+        </p>
+      </div>
+    </header>
+
+
+    <!-- ==========================================
+         INTRO SECTION
+    =========================================== -->
+    <section class="about-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+
+          <div class="col-lg-6 reveal">
+            <div class="feature-img-wrap">
+              <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=900&q=80"
+                   alt="Historic mountaineering">
+              <div class="feature-badge">Since the 1700s</div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal">
+            <span class="section-eyebrow">The Origins</span>
+            <h2 class="section-title">
+              The Birth of <span class="italic">Mountaineering</span>
+            </h2>
+            <p class="section-desc">
+              Mountaineering as a sport was born in the European Alps. What began as 
+              scientific curiosity became a passionate pursuit — and eventually, an 
+              obsession that would take humanity to the roof of the world.
+            </p>
+
+            <ul class="exp-list mt-4">
+              <li><i class="bi bi-patch-check-fill"></i> 1786 — Mont Blanc first climbed by Balmat &amp; Paccard</li>
+              <li><i class="bi bi-patch-check-fill"></i> 1854–1865 — The "Golden Age of Alpinism"</li>
+              <li><i class="bi bi-patch-check-fill"></i> 1953 — Everest summit by Hillary &amp; Tenzing</li>
+              <li><i class="bi bi-patch-check-fill"></i> 1950s–60s — Himalayan era begins</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         TIMELINE SECTION
+    =========================================== -->
+    <section class="timeline-section">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <span class="section-eyebrow">Milestones</span>
+          <h2 class="section-title">The Journey <span class="italic">Through Time</span></h2>
+          <p class="section-desc mx-auto">
+            Centuries of climbs, celebrations, and sacrifices that shaped mountaineering.
+          </p>
+        </div>
+
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-year">1786</div>
+              <h3 class="timeline-title">First Ascent of Mont Blanc</h3>
+              <p class="timeline-text">
+                Jacques Balmat and Michel-Gabriel Paccard reach the summit of Mont Blanc 
+                (4,808 m), marking the birth of modern mountaineering.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-year">1854–1865</div>
+              <h3 class="timeline-title">The Golden Age of Alpinism</h3>
+              <p class="timeline-text">
+                The rise of British mountaineers and Alpine Club saw the first ascents 
+                of most major Alpine peaks, including the Matterhorn (1865).
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-year">1865</div>
+              <h3 class="timeline-title">The Matterhorn Conquered</h3>
+              <p class="timeline-text">
+                Edward Whymper's party makes the first successful ascent, though 
+                the descent ends in tragedy — a turning point in climbing safety culture.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-year">1922</div>
+              <h3 class="timeline-title">Everest Attempts Begin</h3>
+              <p class="timeline-text">
+                The first British expedition to Everest reaches 8,320 m — setting the 
+                stage for decades of Himalayan exploration.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-year">1953</div>
+              <h3 class="timeline-title">Everest Summited</h3>
+              <p class="timeline-text">
+                Edmund Hillary and Tenzing Norgay reach the summit of Mount Everest — 
+                the defining moment of 20th-century mountaineering.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-year">1978</div>
+              <h3 class="timeline-title">First 8000m Without Oxygen</h3>
+              <p class="timeline-text">
+                Reinhold Messner and Peter Habeler summit Everest without supplemental 
+                oxygen — redefining human limits.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-year">1980</div>
+              <h3 class="timeline-title">The Solo Everest Ascent</h3>
+              <p class="timeline-text">
+                Reinhold Messner makes the first solo ascent of Everest without oxygen 
+                during monsoon season — one of history's greatest climbing achievements.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-year">2000s–Today</div>
+              <h3 class="timeline-title">The Modern Era</h3>
+              <p class="timeline-text">
+                Commercial expeditions, precision gear, real-time weather data, and 
+                a new generation of climbers — safer, faster, and more ambitious than ever.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         STATS SECTION
+    =========================================== -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-num" data-count="238">0</div>
+              <div class="stat-label">Years Since Mont Blanc</div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-num" data-count="14">0</div>
+              <div class="stat-label">8000m Peaks</div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-num" data-count="1953">0</div>
+              <div class="stat-label">Everest First Summit</div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-num" data-count="6000">0</div>
+              <div class="stat-label">+ Everest Ascents</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         PARALLAX QUOTE
+    =========================================== -->
+    <section class="parallax-quote" style="background-image:url('https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=1920&q=80');">
+      <div class="container">
+        <p class="quote-text reveal">
+          "We climbed because the mountain was there — and because we wanted to see what we were made of."
+        </p>
+        <div class="quote-author reveal">— Alpine Legacy</div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         CTA SECTION
+    =========================================== -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-eyebrow">Next Chapter</span>
+          <h2 class="section-title">
+            Be Part Of <span class="italic">The Story</span>
+          </h2>
+          <p class="section-desc mx-auto mb-4">
+            Join our expeditions and add your own chapter to the legacy.
+          </p>
+          <a href="booking.html" class="btn btn-gold me-2 mb-2">Book Your Expedition</a>
+          <a href="types-styles.html" class="btn btn-outline-ice mb-2">Explore Styles</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+    <footer>
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6">
+            <a href="../index.html" class="footer-brand-wrap d-flex align-items-center mb-3">
+              <img src="../images/logo.png/logo1.png" alt="Alpine Ascents" class="footer-logo">
+              <span class="footer-brand">ALPINE<span>·</span>ASCENTS</span>
+            </a>
+            <p class="footer-text">
+              Crafting world-class mountaineering expeditions since 1998.
+              Certified guides, uncompromising safety, and journeys that stay with you forever.
+            </p>
+            <div class="social-icons mt-3">
+              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+              <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-6">
+            <div class="footer-heading">Explore</div>
+            <ul class="footer-links">
+              <li><a href="history.html">History</a></li>
+              <li><a href="types-styles.html">Types &amp; Styles</a></li>
+              <li><a href="techniques.html">Techniques</a></li>
+              <li><a href="sheltering.html">Sheltering</a></li>
+              <li><a href="records.html">Records</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-6">
+            <div class="footer-heading">Resources</div>
+            <ul class="footer-links">
+              <li><a href="hazards-safety.html">Hazards &amp; Safety</a></li>
+              <li><a href="guidelines.html">Guidelines</a></li>
+              <li><a href="organizations.html">Organizations</a></li>
+              <li><a href="latest-developments.html">Latest Updates</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-6">
+            <div class="footer-heading">Company</div>
+            <ul class="footer-links">
+              <li><a href="success-stories.html">Success Stories</a></li>
+              <li><a href="booking.html">Book Expedition</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="../index.html">Home</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-6">
+            <div class="footer-heading">Get In Touch</div>
+            <ul class="footer-links">
+              <li><i class="bi bi-geo-alt me-2 text-warning"></i>Chamonix, France</li>
+              <li><i class="bi bi-envelope me-2 text-warning"></i>info@alpineascents.com</li>
+              <li><i class="bi bi-telephone me-2 text-warning"></i>+33 4 50 00 00 00</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          &copy; 2025 Alpine Ascents. All rights reserved. &nbsp;|&nbsp;
+          Designed for those who climb higher.
+        </div>
+
+      </div>
+    </footer>
+
+  </div><!-- /#mainContent -->
+
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- GLOBAL JS (ek folder upar) -->
+  <script src="../js/main.js"></script>
+  <!-- HISTORY JS (ek folder upar) -->
+  <script src="../js/history.js"></script>
+
+</body>
+</html>
